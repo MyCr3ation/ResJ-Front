@@ -1,11 +1,11 @@
 // src/components/insights/InsightsPage.jsx
 import React, { useState, useMemo } from "react";
 import { sampleJournalEntries } from "../data/sampleJournalData";
-import StreaksSection from "../components/insights/StreaksSection.jsx";
-import ActivityStatsSection from "../components/insights/ActivityStatsSection.jsx";
-import MoodDeepDiveSection from "../components/insights/MoodDeepDiveSection.jsx";
-import ContentInsightsSection from "../components/insights/ContentInsightsSection.jsx";
-import GrowthFocusSection from "../components/insights/GrowthFocusSection.jsx";
+import StreaksSection from "../components/Insights/StreaksSection.jsx";
+import ActivityStatsSection from "../components/Insights/ActivityStatsSection.jsx";
+import MoodDeepDiveSection from "../components/Insights/MoodDeepDiveSection.jsx";
+import ContentInsightsSection from "../components/Insights/ContentInsightsSection.jsx";
+import GrowthFocusSection from "../components/Insights/GrowthFocusSection.jsx";
 import { FiLoader } from "react-icons/fi"; // For loading state
 
 const InsightsPage = () => {
