@@ -1,7 +1,7 @@
 // src/components/insights/InsightsPage.jsx
 import React, { useState, useMemo } from "react";
 import { sampleJournalEntries } from "../data/sampleJournalData";
-import StreaksSection from "../components/insights/StreaksSection.jsx";
+import StreaksSection from "../components/insights/StreaksSection";
 import ActivityStatsSection from "../components/insights/ActivityStatsSection.jsx";
 import MoodDeepDiveSection from "../components/insights/MoodDeepDiveSection.jsx";
 import ContentInsightsSection from "../components/insights/ContentInsightsSection.jsx";
