@@ -9,7 +9,7 @@ import {
 	Legend,
 	ResponsiveContainer,
 } from "recharts";
-import { moodNameMap } from "../../data/sampleJournalData";
+import { moodNameMap } from "../../data/sampleJournalData.js";
 import {
 	parseEntryDate,
 	subDays,
