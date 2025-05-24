@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes modalFadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.animate-modalFadeIn {
+	animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+.main-content-width-normal {
+	width: 100%; /* Takes full available width in its flex container */
+}
+
+.main-content-width-shrunk {
+	/* Default for desktop: Content shrinks to make space for a 360px panel */
+	width: calc(100% - 360px); /* Corresponds to CHATBOT_PANEL_DESKTOP_WIDTH_PX */
+
+	@media (max-width: 767px) {
+		/* Below 'md' breakpoint (mobile) */
+		/* Example: if chatbot panel is 85vw on mobile, content takes remaining 15vw */
+		/* Adjust 85vw based on CHATBOT_PANEL_MOBILE_WIDTH_VW in App.jsx */
+		width: calc(100% - 85vw);
+		/* If this makes content too small, an alternative for mobile is needed,
+       like the chatbot panel overlaying instead of shifting content.
+       But the prompt specifies content shifting.
+    */
+	}
+}
+
+/* Optional: Apple-like scrollbar */
+/* For Webkit browsers like Chrome, Safari, Edge */
+::-webkit-scrollbar {
+	width: 6px; /* Slightly thinner */
+	height: 6px;
+}
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+	@apply bg-gray-300 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-gray-400;
+}
+/* For Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: theme("colors.gray.300") transparent; /* thumb and track for light */
+	/* TODO: Add dark mode scrollbar-color for Firefox if you have a dark mode toggle */
+}

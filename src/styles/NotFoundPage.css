@@ -1,0 +1,266 @@
+/* src/pages/NotFoundPage.css or src/components/NotFoundPage.css */
+
+/* Import the Google Font */
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+
+/* Base styles (Vite usually handles resets via index.css/main.css) */
+html,
+body {
+	margin: 0;
+	/* overflow: hidden; -- Applied on the component div instead */
+}
+
+/* Apply styles using the classes defined in the JSX */
+
+.notFoundBackground {
+	background: radial-gradient(circle, #240015 0%, #12000b 100%);
+	/* Apply hueRotate animation */
+	animation: hueRotate 6s ease-in-out 3s infinite;
+}
+
+.svgContainer {
+	/* Apply hueRotate animation */
+	animation: hueRotate 6s ease-in-out 3s infinite;
+}
+
+/* Styling for the animated paths in svgWrap_1 */
+.animatedPath {
+	stroke: #ff005d; /* Initial color */
+	stroke-width: 3px; /* Adjust as needed */
+	fill: transparent;
+	filter: url(#glow); /* Reference the filter defined in SVG defs */
+}
+
+/* Individual animation timings and dash arrays for 404 */
+.animatedPath.path3 {
+	/* Corresponds to id3_1 */
+	stroke-dasharray: 940px; /* Keep original */
+	stroke-dashoffset: -940px;
+	animation: drawLine3 2.5s ease-in-out 0s forwards,
+		flicker3 4s linear 4s infinite;
+}
+
+.animatedPath.path2 {
+	/* Corresponds to id2_1 */
+	stroke-dasharray: 735px; /* Keep original */
+	stroke-dashoffset: -735px;
+	animation: drawLine2 2.5s ease-in-out 0.5s forwards,
+		flicker2 4s linear 4.5s infinite;
+}
+
+.animatedPath.path1 {
+	/* Corresponds to id1_1 */
+	stroke-dasharray: 940px; /* Keep original */
+	stroke-dashoffset: -940px;
+	animation: drawLine1 2.5s ease-in-out 1s forwards,
+		flicker1 4s linear 5s infinite;
+}
+
+/* --- NEW: Styling for the "Page Not Found" animated text paths --- */
+.animatedPath.pathText {
+	/* --- IMPORTANT: Replace these with actual path lengths --- */
+	stroke-dasharray: 150px; /* Example length - MEASURE YOUR PATHS! */
+	stroke-dashoffset: -150px; /* Start hidden */
+	/* --- End Important --- */
+
+	/* Apply draw animation and flicker - Reuse or create new ones */
+	/* This example reuses drawLineText and flickerText (defined below) */
+	/* animation-delay is set inline in JSX for staggering */
+	animation: drawLineText 1.5s ease-in-out forwards,
+		/* Adjust duration */ flickerText 5s linear infinite; /* Adjust duration and timing */
+	/* animation-delay needs to be set to start *after* 404 draws */
+	/* Example: animation-delay: 1.5s; (adjust based on 404 timings) */
+	/* We set this inline in the JSX for staggering */
+
+	/* Ensure flicker starts after drawing is complete */
+	animation-play-state: running, paused; /* Start drawLineText, pause flickerText */
+}
+
+/* Start the flicker animation once the draw animation finishes */
+.animatedPath.pathText {
+	/* You might need a slight delay before flicker starts */
+	animation-play-state: running, running;
+	animation-delay: inherit, 3s; /* Start flicker after draw animation (1.5s) + small pause (1.5s) */
+	/* Adjust 3s based on drawLineText duration + desired pause */
+	/* The inherited delay is the staggered one from JSX */
+}
+
+/* Styling for the static paths in svgWrap_2 */
+.staticPath {
+	stroke: #12000a;
+	stroke-width: 3px; /* Match animated stroke width */
+	fill: transparent;
+	filter: url(#glow); /* Apply glow to static paths too */
+}
+
+/* REMOVED .notFoundTitle styles as h2 is gone */
+/* .notFoundTitle { ... } */
+
+/* --- Keyframe Animations (Keep existing ones) --- */
+
+@keyframes drawLine1 {
+	/* For 4 */
+	0% {
+		stroke-dashoffset: -940px;
+	}
+	100% {
+		stroke-dashoffset: 0px;
+	}
+}
+/* ... (keep drawLine2, drawLine3) ... */
+@keyframes drawLine2 {
+	/* For 0 */
+	0% {
+		stroke-dashoffset: -735px;
+	}
+	100% {
+		stroke-dashoffset: 0px;
+	}
+}
+@keyframes drawLine3 {
+	/* For 4 */
+	0% {
+		stroke-dashoffset: -940px;
+	}
+	100% {
+		stroke-dashoffset: 0px;
+	}
+}
+
+/* --- NEW: Keyframe for drawing the text paths --- */
+@keyframes drawLineText {
+	/* 0% is implicitly stroke-dashoffset: -LENGTH; */
+	100% {
+		stroke-dashoffset: 0px;
+	} /* Fully drawn */
+}
+
+/* --- Keyframe Animations for Flickering (Keep existing) --- */
+/* ... (keep flicker1, flicker2, flicker3) ... */
+@keyframes flicker1 {
+	0% {
+		stroke: #ff005d;
+	}
+	1% {
+		stroke: transparent;
+	}
+	3% {
+		stroke: transparent;
+	}
+	4% {
+		stroke: #ff005d;
+	}
+	6% {
+		stroke: #ff005d;
+	}
+	7% {
+		stroke: transparent;
+	}
+	13% {
+		stroke: transparent;
+	}
+	14% {
+		stroke: #ff005d;
+	}
+	100% {
+		stroke: #ff005d;
+	}
+}
+@keyframes flicker2 {
+	0% {
+		stroke: #ff005d;
+	}
+	50% {
+		stroke: #ff005d;
+	}
+	51% {
+		stroke: transparent;
+	}
+	61% {
+		stroke: transparent;
+	}
+	62% {
+		stroke: #ff005d;
+	}
+	100% {
+		stroke: #ff005d;
+	}
+}
+@keyframes flicker3 {
+	0% {
+		stroke: #ff005d;
+	}
+	1% {
+		stroke: transparent;
+	}
+	10% {
+		stroke: transparent;
+	}
+	11% {
+		stroke: #ff005d;
+	}
+	40% {
+		stroke: #ff005d;
+	}
+	41% {
+		stroke: transparent;
+	}
+	45% {
+		stroke: transparent;
+	}
+	46% {
+		stroke: #ff005d;
+	}
+	100% {
+		stroke: #ff005d;
+	}
+}
+
+/* --- NEW: Keyframe for flickering the text paths (Example: Reuse flicker1 pattern) --- */
+@keyframes flickerText {
+	0% {
+		stroke: #ff005d;
+	}
+	1% {
+		stroke: transparent;
+	}
+	3% {
+		stroke: transparent;
+	}
+	4% {
+		stroke: #ff005d;
+	}
+	6% {
+		stroke: #ff005d;
+	}
+	7% {
+		stroke: transparent;
+	}
+	13% {
+		stroke: transparent;
+	}
+	14% {
+		stroke: #ff005d;
+	}
+	100% {
+		stroke: #ff005d;
+	}
+}
+
+/* REMOVED Keyframes flicker4 and fadeInText as h2 is gone */
+/* @keyframes flicker4 { ... } */
+/* @keyframes fadeInText { ... } */
+
+/* --- Keep hueRotate --- */
+@keyframes hueRotate {
+	/* Applied to background and SVGs */
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(-120deg);
+	}
+	100% {
+		filter: hue-rotate(0deg);
+	}
+}
