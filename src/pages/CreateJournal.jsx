@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import { toast } from "react-hot-toast";
 import Cookies from "js-cookie";
 import useStore from "../store/store.jsx"; // Assuming path is correct
-import { SAMPLE_REFLECTION_QUESTION } from "../data/sampleData"; // Assuming path is correct
+import { SAMPLE_REFLECTION_QUESTION } from "../data/sampleData.js"; // Assuming path is correct
 
-import JournalForm from "../components/JournalForm"; // Assuming path is correct
+import JournalForm from "../components/JournalForm.jsx"; // Assuming path is correct
 
 const TODAY_DATE = new Date().toISOString().split("T")[0];
 const DEFAULT_LOCATION = "Dubai";

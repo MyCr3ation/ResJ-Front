@@ -9,18 +9,18 @@ import { FaArrowLeft } from "react-icons/fa6";
 import Button from "../components/Button";
 
 // Import your actual template components
-import Template1 from "../components/Templates/Template1";
-import Template2 from "../components/Templates/Template2";
-import Template3 from "../components/Templates/Template3";
-import Template4 from "../components/Templates/Template4";
-import Template5 from "../components/Templates/Template5";
-import Template6 from "../components/Templates/Template6";
-import Template7 from "../components/Templates/Template7";
-import Template8 from "../components/Templates/Template8";
-import Template9 from "../components/Templates/Template9";
-import Template10 from "../components/Templates/Template10";
+import Template1 from "../components/Templates/Template1.jsx";
+import Template2 from "../components/Templates/Template2.jsx";
+import Template3 from "../components/Templates/Template3.jsx";
+import Template4 from "../components/Templates/Template4.jsx";
+import Template5 from "../components/Templates/Template5.jsx";
+import Template6 from "../components/Templates/Template6.jsx";
+import Template7 from "../components/Templates/Template7.jsx";
+import Template8 from "../components/Templates/Template8.jsx";
+import Template9 from "../components/Templates/Template9.jsx";
+import Template10 from "../components/Templates/Template10.jsx";
 
-import useStore from "../store/store";
+import useStore from "../store/store.jsx";
 
 // Helper function to get A4 dimensions in points (PDF unit)
 const getA4InPoints = () => ({ width: 595.28, height: 841.89 });

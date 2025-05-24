@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"; // Added useEffect
-import useStore from "../../../store/store";
+import useStore from "../../../store/store.jsx";
 import Input from "../../Common/Input.jsx";
 import Button from "../../Button.jsx";
 import toast from "react-hot-toast";

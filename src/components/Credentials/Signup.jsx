@@ -3,7 +3,7 @@ import { useState /* Removed useEffect */ } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // Import icons
-import { GoogleButton } from "./GoogleButton"; // Assuming this component exists
+import { GoogleButton } from "./GoogleButton.jsx"; // Assuming this component exists
 // Removed: Bootstrap imports (Container, Row, Col, Form, Button, InputGroup, Alert)
 // Removed: Bootstrap CSS import ('bootstrap/dist/css/bootstrap.min.css')
 // Removed: axios import

@@ -1,9 +1,9 @@
 // src/components/AuthModal.jsx
 import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
-import Login from "./Credentials/Login"; // Adjust path if needed
-import Signup from "./Credentials/Signup"; // Adjust path if needed
-import Button from "./Button"; // Assuming Button component exists and can be styled simply
+import Login from "./Credentials/Login.jsx"; // Adjust path if needed
+import Signup from "./Credentials/Signup.jsx"; // Adjust path if needed
+import Button from "./Button.jsx"; // Assuming Button component exists and can be styled simply
 
 function AuthModal({ isOpen, onClose, onLoginSuccess }) {
 	const [isLoginView, setIsLoginView] = useState(true); // Default to Login view

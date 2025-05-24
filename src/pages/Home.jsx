@@ -1,10 +1,10 @@
 // pages/Home.jsx (or your specific path to the Home component)
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
-import Main from "../components/Home/Main";
-import AboutUsSection from "../components/Home/AboutUsSection";
-import AboutCreatorsSection from "../components/Home/AboutCreatorsSection";
-import FeaturesOverviewSection from "../components/Home/FeaturesOverviewSection";
+import Main from "../components/Home/Main.jsx";
+import AboutUsSection from "../components/Home/AboutUsSection.jsx";
+import AboutCreatorsSection from "../components/Home/AboutCreatorsSection.jsx";
+import FeaturesOverviewSection from "../components/Home/FeaturesOverviewSection.jsx";
 
 const HomePage = ({ onAuthRequired }) => {
 	const location = useLocation();

@@ -3,7 +3,7 @@ import {
 	FaArrowRight,
 	// Removed unused icons: FaRegEdit, FaRegListAlt, FaChartLine, FaFileAlt, FaFeatherAlt, FaUsers, FaCode
 } from "react-icons/fa";
-import Button from "../Button"; // Assuming Button.jsx is in the same folder
+import Button from "../Button.jsx"; // Assuming Button.jsx is in the same folder
 import BG from "../../assets/bgmain.jpg";
 
 // ================================================

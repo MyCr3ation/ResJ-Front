@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import JournalCard from "./Journal";
+import JournalCard from "./Journal.jsx";
 import Pagination from "../Pagination.jsx";
 import { AiOutlineClear } from "react-icons/ai";
 import { FaRegEdit } from "react-icons/fa";

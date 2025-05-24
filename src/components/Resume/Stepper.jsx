@@ -1,7 +1,7 @@
 // src/components/Resume/Stepper.jsx
 import React from "react";
 import { FiArrowLeft, FiArrowRight, FiCheckCircle } from "react-icons/fi"; // Added FiCheckCircle
-import Button from "../Button"; // Adjust path
+import Button from "../Button.jsx"; // Adjust path
 
 const Stepper = ({
 	prev,

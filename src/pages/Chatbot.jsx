@@ -1,7 +1,7 @@
 // src/components/Chatbot/Chatbot.jsx
 import React, { useState, useEffect, useRef } from "react";
 // Assuming ChatMessage is now correctly pathed from ./ChatMessage not ../components/Chatbot/ChatMessage
-import ChatMessage from "../components/Chatbot/ChatMessage";
+import ChatMessage from "../components/Chatbot/ChatMessage.jsx";
 
 // Simple X icon for closing
 const CloseIcon = () => (

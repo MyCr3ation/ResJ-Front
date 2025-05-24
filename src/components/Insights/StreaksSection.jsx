@@ -1,8 +1,8 @@
 // src/components/insights/StreaksSection.jsx
 import React from "react";
-import CurrentJournalingStreakCard from "./CurrentJournalingStreakCard";
-import LongestDailyStreakCard from "./LongestDailyStreakCard";
-import LongestWeeklyStreakCard from "./LongestWeeklyStreakCard";
+import CurrentJournalingStreakCard from "./CurrentJournalingStreakCard.jsx";
+import LongestDailyStreakCard from "./LongestDailyStreakCard.jsx";
+import LongestWeeklyStreakCard from "./LongestWeeklyStreakCard.jsx";
 
 const StreaksSection = ({ entries }) => {
 	return (

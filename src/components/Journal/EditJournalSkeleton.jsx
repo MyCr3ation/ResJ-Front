@@ -1,6 +1,6 @@
 // src/components/pages/EditJournalLoadingSkeleton.jsx
 import React from "react";
-import ShimmerDiv from "../Common/ShimmerDiv";
+import ShimmerDiv from "../Common/ShimmerDiv.jsx";
 
 const EditJournalLoadingSkeleton = () => {
 	return (

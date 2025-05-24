@@ -1,7 +1,7 @@
 // src/components/insights/MoodDeepDiveSection.jsx
 import React from "react";
-import MoodPaletteCard from "./MoodPaletteCard";
-import FrequentMoodCard from "./FrequentMoodCard";
+import MoodPaletteCard from "./MoodPaletteCard.jsx";
+import FrequentMoodCard from "./FrequentMoodCard.jsx";
 
 const MoodDeepDiveSection = ({ entries }) => {
 	return (

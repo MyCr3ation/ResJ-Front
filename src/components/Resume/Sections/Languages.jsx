@@ -1,6 +1,6 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
-import useStore from "../../../store/store"; // Adjusted path
+import useStore from "../../../store/store.jsx"; // Adjusted path
 import Input from "../../Common/Input.jsx"; // Adjusted path
 import Button from "../../Button.jsx"; // Adjusted path
 import Example from "../Example.jsx"; // Assuming shared Example, adjust path

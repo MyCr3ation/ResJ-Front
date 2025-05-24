@@ -10,21 +10,21 @@ import {
 } from "react-router-dom";
 
 // Page and Component Imports (ensure paths are correct)
-import HomePage from "./pages/Home";
-import AllJournal from "./pages/AllJournal";
-import CreateJournal from "./pages/CreateJournal";
-import NotFoundPage from "./pages/NotFoundPage";
-import JournalDetailPage from "./pages/JournalDetailPage";
-import EditJournal from "./pages/EditJournal";
-import Resume from "./pages/Resume";
+import HomePage from "./pages/Home.jsx";
+import AllJournal from "./pages/AllJournal.jsx";
+import CreateJournal from "./pages/CreateJournal.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
+import JournalDetailPage from "./pages/JournalDetailPage.jsx";
+import EditJournal from "./pages/EditJournal.jsx";
+import Resume from "./pages/Resume.jsx";
 import Template from "./pages/Template.jsx";
 import ChooseTemplate from "./pages/ChooseTemplate.jsx";
 import Profile from "./pages/Profile.jsx";
 import InsightsPage from "./pages/Insights.jsx";
 
-import Navbar from "./components/Navbar"; // Your Navbar component
-import LoadingAnimation from "./components/LoadingAnimation";
-import AuthModal from "./components/AuthModal";
+import Navbar from "./components/Navbar.jsx"; // Your Navbar component
+import LoadingAnimation from "./components/LoadingAnimation.jsx";
+import AuthModal from "./components/AuthModal.jsx";
 import Footer from "./components/Footer.jsx";
 
 import Chatbot from "./pages/Chatbot.jsx";

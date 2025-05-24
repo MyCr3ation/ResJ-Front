@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { FaArrowRight, FaBars, FaTimes, FaAngleDown } from "react-icons/fa";
-import Button from "./Button";
-import Avatar from "./Avatar";
+import Button from "./Button.jsx";
+import Avatar from "./Avatar.jsx";
 import Logo from "../assets/resj-logo-color.svg";
 
 const logoSrc = Logo;

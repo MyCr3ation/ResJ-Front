@@ -1,6 +1,6 @@
 // src/components/insights/GrowthFocusSection.jsx
 import React from "react";
-import GoalFocusCard from "./GoalFocusCard";
+import GoalFocusCard from "./GoalFocusCard.jsx";
 
 const GrowthFocusSection = ({ filteredEntries, periodLabel }) => {
 	return (

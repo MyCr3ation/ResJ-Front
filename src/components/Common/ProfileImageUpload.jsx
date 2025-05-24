@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { IoCloudUploadOutline } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
-import ImageCrop from "./ImageCrop"; // Make sure path is correct
+import ImageCrop from "./ImageCrop.jsx"; // Make sure path is correct
 import defaultProfilePicPlaceholder from "../../assets/profilepic.jpg"; // Your default placeholder
 
 const ProfileImageUpload = ({

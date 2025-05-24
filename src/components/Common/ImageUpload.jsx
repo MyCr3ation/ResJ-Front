@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import useStore from "../../store/store"; // Make sure this path is correct
+import useStore from "../../store/store.jsx"; // Make sure this path is correct
 import { IoCloudUploadOutline } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
-import ImageCrop from "./ImageCrop"; // Make sure this path is correct and ImageCrop is also i18n-agnostic or handled
+import ImageCrop from "./ImageCrop.jsx"; // Make sure this path is correct and ImageCrop is also i18n-agnostic or handled
 
 const ImageUpload = () => {
 	const {

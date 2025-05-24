@@ -34,7 +34,7 @@ import {
 	MdVerifiedUser,
 	MdGroup,
 } from "react-icons/md";
-import useStore from "../../store/store";
+import useStore from "../../store/store.jsx";
 
 // --- Local Helper: cn (Conditional ClassNames) ---
 const cn = (...classes) => classes.filter(Boolean).join(" ");

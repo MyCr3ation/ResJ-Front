@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../Common/SectionTitle.jsx";
 
 // Note: initialFiles prop added to allow resetting from parent via key prop
 const MediaAttachment = ({ handleFileChange, initialFiles = [] }) => {

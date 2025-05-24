@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import useStore from "../../store/store"; // Assuming store path is correct
-import { SAMPLE_QUOTE } from "../../data/sampleData"; // Import sample data
+import useStore from "../../store/store.jsx"; // Assuming store path is correct
+import { SAMPLE_QUOTE } from "../../data/sampleData.js"; // Import sample data
 import { RiDoubleQuotesR } from "react-icons/ri";
 import Cookies from "js-cookie";
-import SectionTitle from "../Common/SectionTitle";
-import ShimmerDiv from "../Common/ShimmerDiv";
+import SectionTitle from "../Common/SectionTitle.jsx";
+import ShimmerDiv from "../Common/ShimmerDiv.jsx";
 
 const QuoteSkeleton = () => {
 	return (

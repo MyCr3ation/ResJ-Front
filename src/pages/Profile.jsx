@@ -1,8 +1,8 @@
 // src/pages/ProfilePage.jsx
 import React, { useState, useEffect } from "react";
-import Input from "../components/Common/Input";
-import Button from "../components/Button";
-import ProfileImageUpload from "../components/Common/ProfileImageUpload";
+import Input from "../components/Common/Input.jsx";
+import Button from "../components/Button.jsx";
+import ProfileImageUpload from "../components/Common/ProfileImageUpload.jsx";
 import defaultProfilePicForPage from "../assets/profilepic.jpg";
 
 import toast from "react-hot-toast";

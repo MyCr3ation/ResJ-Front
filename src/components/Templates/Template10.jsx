@@ -26,7 +26,7 @@ import {
 	MdMilitaryTech, // For Certificates (was MdOutlineRedeem)
 	MdGroups, // For References (was MdOutlineConnectWithoutContact)
 } from "react-icons/md";
-import useStore from "../../store/store";
+import useStore from "../../store/store.jsx";
 
 // --- Local Helper: cn (Conditional ClassNames) ---
 const cn = (...classes) => classes.filter(Boolean).join(" ");

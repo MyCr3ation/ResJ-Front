@@ -1,7 +1,7 @@
 // src/components/insights/FrequentMoodCard.jsx
 import React, { useMemo } from "react";
 import InsightCard from "../Common/InsightCard.jsx";
-import { moodNameMap } from "../../data/sampleJournalData";
+import { moodNameMap } from "../../data/sampleJournalData.js";
 import {
 	parseEntryDate,
 	subDays,

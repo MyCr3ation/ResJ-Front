@@ -1,6 +1,6 @@
 // src/components/insights/ContentInsightsSection.jsx
 import React from "react";
-import WordCloudCard from "./WordCloudCard";
+import WordCloudCard from "./WordCloudCard.jsx";
 
 const ContentInsightsSection = ({ filteredEntries, periodLabel }) => {
 	return (

@@ -1,7 +1,7 @@
 // src/pages/ChooseTemplate.jsx
 import React, { useRef } from "react"; // Removed useEffect as onLoad handles the timing
 import { useNavigate, Link } from "react-router-dom"; // Link for back button (optional)
-import Button from "../components/Button"; // Your Button component
+import Button from "../components/Button.jsx"; // Your Button component
 
 // Import your template preview images
 import Template1Img from "../assets/templates/template1.webp";

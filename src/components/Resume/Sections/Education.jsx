@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useStore from "../../../store/store"; // Adjusted path
+import useStore from "../../../store/store.jsx"; // Adjusted path
 import Input from "../../Common/Input.jsx"; // Adjusted path
 import Button from "../../Button.jsx"; // Adjusted path
 import TextArea from "../../Common/TextArea.jsx"; // Using TextArea

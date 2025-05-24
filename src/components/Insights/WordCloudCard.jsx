@@ -2,8 +2,8 @@
 import React, { useMemo } from "react";
 import InsightCard from "../Common/InsightCard.jsx";
 import { TagCloud } from "react-tagcloud";
-import { stopWords } from "../../data/sampleJournalData"; // Assuming this path is correct
-import { getWordFrequency } from "../../utils/insightsUtils"; // Assuming this path is correct
+import { stopWords } from "../../data/sampleJournalData.js"; // Assuming this path is correct
+import { getWordFrequency } from "../../utils/insightsUtils.jsx"; // Assuming this path is correct
 import { FiMessageSquare } from "react-icons/fi";
 
 // Updated color palette inspired by the image

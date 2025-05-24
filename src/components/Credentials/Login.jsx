@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // Import icons
-import { GoogleButton } from "./GoogleButton"; // Assuming this component exists
+import { GoogleButton } from "./GoogleButton.jsx"; // Assuming this component exists
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login({ onAuthSuccess }) {

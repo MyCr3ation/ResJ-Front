@@ -1,7 +1,7 @@
 import React from "react";
-import useStore from "../../store/store";
-import SectionTitle from "../Common/SectionTitle";
-import ShimmerDiv from "../Common/ShimmerDiv";
+import useStore from "../../store/store.jsx";
+import SectionTitle from "../Common/SectionTitle.jsx";
+import ShimmerDiv from "../Common/ShimmerDiv.jsx";
 
 // Skeleton loader for the reflection question
 const ReflectionSkeleton = () => {

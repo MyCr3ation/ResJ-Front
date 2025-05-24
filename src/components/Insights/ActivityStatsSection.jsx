@@ -1,9 +1,9 @@
 // src/components/insights/ActivityStatsSection.jsx
 import React from "react";
-import EntriesActivityCard from "./EntriesActivityCard";
-import JournaledDaysSummaryCard from "./JournaledDaysSummaryCard";
-import WordsWrittenSummaryCard from "./WordsWrittenSummaryCard";
-import PhotosAddedSummaryCard from "./PhotosAddedSummaryCard";
+import EntriesActivityCard from "./EntriesActivityCard.jsx";
+import JournaledDaysSummaryCard from "./JournaledDaysSummaryCard.jsx";
+import WordsWrittenSummaryCard from "./WordsWrittenSummaryCard.jsx";
+import PhotosAddedSummaryCard from "./PhotosAddedSummaryCard.jsx";
 
 const ActivityStatsSection = ({ entries, onFilterChange }) => {
 	// This local state will hold the filtered entries passed from EntriesActivityCard

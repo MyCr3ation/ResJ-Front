@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import SectionTitle from "../common/SectionTitle"; // Assuming path is correct
-import useStore from "../../store/store"; // Assuming path is correct
-import { getSampleWeather } from "../../data/sampleData"; // Import sample data function
-import ShimmerDiv from "../Common/ShimmerDiv";
+import SectionTitle from "../common/SectionTitle.jsx"; // Assuming path is correct
+import useStore from "../../store/store.jsx"; // Assuming path is correct
+import { getSampleWeather } from "../../data/sampleData.js"; // Import sample data function
+import ShimmerDiv from "../Common/ShimmerDiv.jsx";
 
 const WeatherSkeleton = () => {
 	return (

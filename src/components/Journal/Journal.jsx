@@ -1,7 +1,7 @@
 // src/components/journal/JournalCard.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { defaultMoodImages } from "../../data/sampleJournalData"; // Import mood images mapping
+import { defaultMoodImages } from "../../data/sampleJournalData.js"; // Import mood images mapping
 
 const JournalCard = ({ entry }) => {
 	// Determine Image Source

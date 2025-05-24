@@ -2,13 +2,13 @@
 import React from "react";
 import { AiOutlineDelete } from "react-icons/ai";
 
-import Input from "./Common/Input";
-import Textarea from "./Common/TextArea"; // Import the new Textarea component
-import MoodSelector from "./Journal/MoodSelector";
-import SectionTitle from "./Common/SectionTitle";
-import MediaAttachment from "./Journal/MediaAttachment";
-import WeatherWidget from "./Journal/Weather";
-import QuoteWidget from "./Journal/Quote";
+import Input from "./Common/Input.jsx";
+import Textarea from "./Common/TextArea.jsx"; // Import the new Textarea component
+import MoodSelector from "./Journal/MoodSelector.jsx";
+import SectionTitle from "./Common/SectionTitle.jsx";
+import MediaAttachment from "./Journal/MediaAttachment.jsx";
+import WeatherWidget from "./Journal/Weather.jsx";
+import QuoteWidget from "./Journal/Quote.jsx";
 
 const TODAY_DATE_FORM = new Date().toISOString().split("T")[0];
 

@@ -12,7 +12,7 @@ import {
 	FaDribbble,
 } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
-import useStore from "../../store/store";
+import useStore from "../../store/store.jsx";
 // FaTwitter was already imported, SiGithub, SiLinkedin etc. are replaced by Fa versions or other Si icons.
 
 // --- Local Helper: cn (Conditional ClassNames) ---

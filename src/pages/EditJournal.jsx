@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 
 import { sampleJournalEntries } from "../data/sampleJournalData.js";
-import JournalForm from "../components/JournalForm";
+import JournalForm from "../components/JournalForm.jsx";
 import EditJournalLoadingSkeleton from "../components/Journal/EditJournalSkeleton.jsx";
 
 const deepEqual = (obj1, obj2) => JSON.stringify(obj1) === JSON.stringify(obj2);
